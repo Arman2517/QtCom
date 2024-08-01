@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>settingTemp</class>
+ <widget class="QWidget" name="settingTemp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>693</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="tb1"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QTableWidget" name="tb5"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QTableWidget" name="tb3"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableWidget" name="tb2"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QPushButton" name="save">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Сохранить</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="loadFromJson">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Загрузить из файла</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QTableWidget" name="tb4"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

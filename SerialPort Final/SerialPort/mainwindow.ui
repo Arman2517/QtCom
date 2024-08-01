@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="5" column="0" colspan="3">
+     <widget class="QSplitter" name="splitter_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QPushButton" name="startV">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Старт &quot;Вольтметр&quot;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="stopV">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>СТОП &quot;Вольтметр&quot;</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QSplitter" name="splitter_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLabel" name="labelVolt">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Данные с вольтметра</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelCAP">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Код АЦП</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelACP">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Код Температуры</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelOut">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Выходной код</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelTemp">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Код ЦАП</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLineEdit" name="voltEdit"/>
+      <widget class="QLineEdit" name="ACPEdit"/>
+      <widget class="QLineEdit" name="tempEdit"/>
+      <widget class="QLineEdit" name="outEdit"/>
+      <widget class="QLineEdit" name="CAPEdit"/>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QPushButton" name="calibration">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Градуировка</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tempPogr">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Температурная погрешность</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="PSI">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>ПСИ</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tempSetting">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Настройка температуры</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="3">
+     <widget class="QSplitter" name="splitter_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QPushButton" name="start">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Старт</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="stop">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>СТОП</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="6" column="0" colspan="3">
+     <widget class="QPushButton" name="hexCreate">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Cоздать .Hex</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QComboBox" name="VoltPorts">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QComboBox" name="cmbPorts">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Выбор порта</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Выбор порта для &quot;Вольтметра&quot;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>780</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

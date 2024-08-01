@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PSI</class>
+ <widget class="QWidget" name="PSI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ПСИ</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="voltLabel">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Показатели вольтметра</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit"/>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="writeOne">
+     <property name="text">
+      <string>Добавить запись</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="deleteOne">
+     <property name="text">
+      <string>Удалить запись</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QPushButton" name="save">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Сохранить</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="loadFromJson">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Загрузить из файла</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
